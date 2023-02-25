@@ -1,0 +1,4 @@
+.callout[data-callout="plant-info"] {
+   --callout-color: 70, 130, 180;
+   --callout-icon: lucide-flower-2;
+}
