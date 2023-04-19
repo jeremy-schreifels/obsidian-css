@@ -1,0 +1,22 @@
+/* Custom Obsidian image text wrap          */
+/*                                          */
+/* Creates floating images with text wrap   */
+/* To position images, append the location  */
+/* (right or left) preceded by a hash (#)   */
+/* in the image embed link ([!image#right]) */
+
+div[src$="#left"] {
+    position: relative;
+    float: left;
+    width: 45%;
+    margin: 2px;
+    clip-path: polygon(10% 10%, 90% 10%, 90% 90%, 10% 90%);
+}
+
+div[src$="#right"] {
+    position: relative;
+    float: right;
+    width: 45%;
+    margin: 2px;
+    clip-path: polygon(10% 10%, 90% 10%, 90% 90%, 10% 90%);
+}

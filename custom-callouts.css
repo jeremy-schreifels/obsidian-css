@@ -1,0 +1,56 @@
+/* Custom Obsidian callouts                         */
+/*                                                  */
+/* Creates custom callout boxes and                 */
+/* overwrites some default callouts                 */
+/* to change icons and/or colors                    */
+/* Icons from lucide.dev                            */
+/* RGB color codes from https://www.rapidtables.com/web/color/RGB_Color.html */
+
+.callout {
+    --color-blue1: 70, 130, 180;
+    --color-blue2: 64, 106, 151;
+    --color-blue3: 88, 127, 167;
+    --color-blue4: 141, 161, 186;
+    --color-blue5: 128, 166, 206;
+    --color-blue6: 166, 189, 219;
+    --color-orange: 255, 165, 0;
+    --color-green: 0, 128, 0;
+    --color-grey: 128, 128, 128;
+    border: 1px;
+    border-radius: 10px;
+}
+
+.callout[data-callout="codeblock"] {
+    --callout-color: var(--color-grey);
+    --callout-icon: lucide-code;
+}
+
+.callout[data-callout="event"] {
+    --callout-color: var(--color-blue6);
+    --callout-icon: lucide-calendar;
+}
+
+.callout[data-callout="garden"] {
+    --callout-color: var(--color-green);
+    --callout-icon: lucide-flower-2;
+}
+
+.callout[data-callout="quote"] {
+    --callout-color: var(--color-blue1);
+    --callout-icon: lucide-quote;
+}
+
+.callout[data-callout="resource"] {
+    --callout-color: var(--color-blue2);
+    --callout-icon: lucide-book;
+}
+
+.callout[data-callout="tip"] {
+    --callout-color: var(--color-blue3);
+    --callout-icon: lucide-lightbulb;
+}
+
+.callout[data-callout="warning"] {
+    --callout-color: var(--color-orange);
+    --callout-icon: lucide-alert-triangle;
+}
