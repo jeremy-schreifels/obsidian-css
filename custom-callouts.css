@@ -7,26 +7,25 @@
 /* RGB color codes from https://www.rapidtables.com/web/color/RGB_Color.html */
 
 .callout {
-    --color-blue1: 70, 130, 180;
-    --color-blue2: 64, 106, 151;
-    --color-blue3: 88, 127, 167;
-    --color-blue4: 141, 161, 186;
-    --color-blue5: 128, 166, 206;
-    --color-blue6: 166, 189, 219;
-    --color-orange: 255, 165, 0;
-    --color-green: 0, 128, 0;
-    --color-grey: 128, 128, 128;
+    --color-blue: 105, 148, 189;
+    --color-green: 146, 188, 153;
+    --color-purple: 153, 146, 188;
+    --color-grape: 168, 153, 178;
+    --color-tuscany: 200, 165, 156;
+    --color-tan: 213, 182, 155;
+    --color-greygreen: 204, 204, 180;
+    --color-pastelblue: 177, 201, 201;
     border: 1px;
     border-radius: 10px;
 }
 
 .callout[data-callout="codeblock"] {
-    --callout-color: var(--color-grey);
+    --callout-color: var(--color-greygreen);
     --callout-icon: lucide-code;
 }
 
 .callout[data-callout="event"] {
-    --callout-color: var(--color-blue6);
+    --callout-color: var(--color-tuscany);
     --callout-icon: lucide-calendar;
 }
 
@@ -36,21 +35,26 @@
 }
 
 .callout[data-callout="quote"] {
-    --callout-color: var(--color-blue1);
+    --callout-color: var(--color-blue);
     --callout-icon: lucide-quote;
 }
 
 .callout[data-callout="resource"] {
-    --callout-color: var(--color-blue2);
+    --callout-color: var(--color-pastelblue);
     --callout-icon: lucide-book;
 }
 
 .callout[data-callout="tip"] {
-    --callout-color: var(--color-blue3);
+    --callout-color: var(--color-tan);
     --callout-icon: lucide-lightbulb;
 }
 
 .callout[data-callout="warning"] {
-    --callout-color: var(--color-orange);
+    --callout-color: var(--color-purple);
     --callout-icon: lucide-alert-triangle;
+}
+
+.callout[data-callout="metadata"] {
+    --callout-color: var(--color-grape);
+    --callout-icon: lucide-cog;
 }
