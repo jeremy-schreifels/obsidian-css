@@ -4,7 +4,6 @@
 /* overwrites some default callouts                 */
 /* to change icons and/or colors                    */
 /* Icons from lucide.dev                            */
-/* RGB color codes from https://www.rapidtables.com/web/color/RGB_Color.html */
 
 .callout {
     --color-blue: 105, 148, 189;
@@ -25,7 +24,7 @@
 }
 
 .callout[data-callout="event"] {
-    --callout-color: var(--color-tuscany);
+    --callout-color: var(--color-blue);
     --callout-icon: lucide-calendar;
 }
 
@@ -34,18 +33,27 @@
     --callout-icon: lucide-flower-2;
 }
 
+.callout[data-callout="metadata"] {
+    --callout-color: var(--color-grape);
+    --callout-icon: lucide-cog;
+}
+
 .callout[data-callout="quote"] {
     --callout-color: var(--color-blue);
     --callout-icon: lucide-quote;
 }
 
 .callout[data-callout="resource"] {
-    --callout-color: var(--color-pastelblue);
+    --callout-color: var(--color-blue);
     --callout-icon: lucide-book;
 }
 
+.callout[data-callout="text"] {
+    --callout-color: var(--color-blue);
+    --callout-icon: lucide-messages-square;
+}
 .callout[data-callout="tip"] {
-    --callout-color: var(--color-tan);
+    --callout-color: var(--color-blue);
     --callout-icon: lucide-lightbulb;
 }
 
@@ -54,7 +62,3 @@
     --callout-icon: lucide-alert-triangle;
 }
 
-.callout[data-callout="metadata"] {
-    --callout-color: var(--color-grape);
-    --callout-icon: lucide-cog;
-}
